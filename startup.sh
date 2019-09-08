@@ -27,4 +27,9 @@ fi
 # Run the teamspeak server
 export LD_LIBRARY_PATH=/opt/teamspeak
 cd /opt/teamspeak
-./ts3server logpath=/data/logs/ license_accepted=1
+PASSWD=$(pwgen -cns1 36)
+./ts3server logpath=/data/logs/ license_accepted=1 serveradmin_password=$PASSWD
+echo
+echo "Server Query Admin Account password!"
+echo "loginname= "serveradmin", password= $PASSWD"
+echo
