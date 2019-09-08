@@ -32,4 +32,4 @@ echo
 echo "Server Query Admin Account password!"
 echo "loginname= \"serveradmin\", password= ${PASSWD}"
 echo
-./ts3server logpath=/data/logs/ license_accepted=1 serveradmin_password=$PASSWD licensepath=/data/licensekey.dat
+./ts3server logpath=/data/logs/ license_accepted=1 serveradmin_password=$PASSWD licensepath=/data
